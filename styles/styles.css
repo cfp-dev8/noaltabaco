@@ -1,0 +1,192 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    background: #444;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+header h1, main h2, main h3 {
+    text-align: center;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 30%;
+    height: 0;
+    overflow: hidden;
+    max-width: 80%;
+    margin: 20px auto;
+    background: #000;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Media Queries */
+
+/* Estilos para pantallas hasta 320px (dispositivos móviles muy pequeños) */
+@media (max-width: 320px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .video-container {
+        max-width: 100%;
+        padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    }
+
+    header h1 {
+        font-size: 16px; /* Ajustar tamaño de fuente */
+    }
+
+    main h2, main h3 {
+        font-size: 14px; /* Ajustar tamaño de fuente */
+    }
+}
+
+/* Estilos para pantallas hasta 380px */
+@media (max-width: 380px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .video-container {
+        max-width: 100%;
+        padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    }
+
+    header h1 {
+        font-size: 18px; /* Ajustar tamaño de fuente */
+    }
+
+    main h2, main h3 {
+        font-size: 16px; /* Ajustar tamaño de fuente */
+    }
+}
+
+/* Estilos para pantallas hasta 450px */
+@media (max-width: 450px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .video-container {
+        max-width: 100%;
+        padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    }
+
+    header h1 {
+        font-size: 20px; /* Ajustar tamaño de fuente */
+    }
+
+    main h2, main h3 {
+        font-size: 18px; /* Ajustar tamaño de fuente */
+    }
+}
+
+/* Estilos para pantallas hasta 600px (móviles estándar) */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .video-container {
+        max-width: 100%;
+        padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    }
+
+    header h1 {
+        font-size: 22px; /* Ajustar tamaño de fuente */
+    }
+
+    main h2, main h3 {
+        font-size: 20px; /* Ajustar tamaño de fuente */
+    }
+}
+
+/* Estilos para tablets en orientación vertical (pantallas hasta 768px) */
+@media (max-width: 768px) {
+    .video-container {
+        max-width: 90%;
+        padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    }
+
+    header h1, main h2, main h3 {
+        font-size: 22px; /* Ajustar tamaño de fuente */
+    }
+}
+
+/* Estilos para tablets en orientación horizontal (pantallas hasta 1024px) */
+@media (max-width: 1024px) {
+    .video-container {
+        max-width: 90%;
+        padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    header h1, main h2, main h3 {
+        font-size: 24px; /* Ajustar tamaño de fuente */
+    }
+}
